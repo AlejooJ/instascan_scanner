@@ -16,37 +16,49 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <script src="plugins/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <div class="content">
+    <div class="container">
         <div class="container-fluid">
-            <div class="row ">
-                <div class="col-12">
-                    <div>
-                        <ul id="seleccionarCamara">
-                        </ul>
-                    </div>
-                    <div class="contenedor-video">
-                        <video id="preview"></video>
-                    </div>
+            <div class="row text-center">
+                <h3>INSTASCAN SCANNER QR </h3>
 
-                </div>
+            </div>
+            <div class="row">
+                <ul id="seleccionarCamara">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="row div-center">
+        <div class="col-12">
+            <div class="contenedor-video">
+                <video id="preview"></video>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row div-center">
+            <div class="col-12">
+                <button class="btn btn-success btn-sm" id="abrirCamara">Ver cámaras</button>
+                <button class="btn btn-danger btn-sm d-none" id="cerrarCamara">Cerrar cámaras</button>
             </div>
         </div>
+    </div>
 
-        <button class="btn btn-success btn-sm" id="abrirCamara">abrir camara</button>
-        <button class="btn btn-danger btn-sm" id="cerrarCamara">Cerrar camara</button>
-
-        <!-- AUDIO SIMULACIÓN SCANNER -->
-        <audio id="sonido" src="audio/Beep_Short_02_Sound_Effect_Mp3_103.mp3">
-        </audio>
-
+    <!-- AUDIO SIMULACIÓN SCANNER -->
+    <audio id="sonido" src="audio/Beep_Short_02_Sound_Effect_Mp3_103.mp3">
+    </audio>
 </body>
 
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-
 
 </html>
