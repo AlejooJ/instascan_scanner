@@ -47,3 +47,8 @@ $("#cerrarCamara").click(function (e) {
   e.preventDefault();
   scanner.stop();
 });
+
+$("#respuesta").click(function (e) {
+  e.preventDefault();
+  alert("Hola");
+});
